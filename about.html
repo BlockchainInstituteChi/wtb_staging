@@ -69,20 +69,20 @@ permalink: /about/
 
 <script>
 
-window.onload = function () { 
-    reorderTeam('person_team', 'teamContainer');
-    reorderTeam('person_board', 'boardContainer')
-}
-
-function reorderTeam(teamName, container) {
-    var team = document.getElementsByClassName(teamName)
-    var teamContainer = document.getElementById(container)
-
-    for (var i = team.length; i >= 0; i--) {
-        teamContainer.appendChild(team[Math.random() * i | 0]);
+    window.onload = function () { 
+        reorderTeam('person_team', 'teamContainer');
+        reorderTeam('person_board', 'boardContainer')
     }
 
-}
+    function reorderTeam(teamName, container) {
+        var team = document.getElementsByClassName(teamName)
+        var teamContainer = document.getElementById(container)
+
+        for (var i = team.length; i >= 0; i--) {
+            teamContainer.appendChild(team[Math.random() * i | 0]);
+        }
+
+    }
 
 </script>
 
