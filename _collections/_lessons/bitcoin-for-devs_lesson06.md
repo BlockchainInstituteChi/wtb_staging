@@ -25,7 +25,7 @@ The first asymmetric algorithms:
 </ul>
 With asymmetric cryptography, instead of having one key, each party has two keys: a <strong>public key</strong> and a <strong>private key</strong>.
 
-{% include callouts/imageWithCaption.html
+{% include /callouts/imageWithCaption.html
 	image="https://theblockchaininstitute.org/wp-content/uploads/2019/02/AliceBobKeys-01.png"
 	title=""
 	bodyText="<b>A:</b> <i>Alice Private Key;</i> <b>B:</b> <i>Alice Public Key;</i> <b>C:</b> <i>Bob Private Key;</i> <b>D:</b> <i>Bob Public Key.</i>"
@@ -37,11 +37,7 @@ With Bob’s public key, Alice can encrypt her message to him and transmit it. C
 
 {% include callouts/callout.html
 	title="Public Keys"
-	bodyText="<ul>
-		<li>Can be shared publicly.</li>
-		<li>Can be used to encrypt a message to another party.</li>
-		<li>Bob’s public key can be used to encrypt a message to Bob that only he can decipher.</li>
-	</ul>"
+	bodyText="<ul><li>Can be shared publicly.</li><li>Can be used to encrypt a message to another party.</li><li>Bob’s public key can be used to encrypt a message to Bob that only he can decipher.</li></ul>"
 %}
 <br>
 

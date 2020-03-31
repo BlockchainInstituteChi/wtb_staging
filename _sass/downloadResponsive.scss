@@ -5,14 +5,16 @@
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
-	
+	.tileItem.downloadItem {
+    		min-height: 6em;
+	}
 } 
 
 /* Mobile */
 @media screen and (max-width: 600px) {
 	.downloadsRowContainer .tileItem {
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 2.5em;
     }
     .downloadsRowContainer {
         overflow-x: hidden;

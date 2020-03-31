@@ -25,6 +25,9 @@
 	.pageHeaderImage a.callToActionButton {
 		padding: 1em 3em;
 	}
+	section.pageHeaderImage {
+	    margin-bottom: 3em;
+	}
     
     /* Nav (Mobile General) */
 	.hoverNavbox {
@@ -85,10 +88,25 @@
         max-height: unset;
         height: -webkit-fill-available;
     }
+	
+	
+	/*Breadcrumbs*/
+	section.breadcrumbs {
+    		padding-top: 0em;
+	}
+	
 	/* Row Margins */
 		.row {
     		margin: auto 2em;
 		max-width: calc(100% - 4em);
+	}
+	
+	/*Sections*/
+	h1{
+		font-size: 2em;
+	}
+	.hasColorTag {
+    		margin-left: -3.46em;
 	}
 
     /* Upcoming Events Footer */
@@ -97,6 +115,12 @@
 	}
 	section.hasSectionColorTag::before{
 	    margin-left: -2.5em;
+	}
+	.upcomingEventsFooter .eventTile h1 {
+    		font-size: 1.25em;
+	}
+	.upcomingEventsFooter .eventTile {
+    		width: 22%;
 	}
     .upcomingEventsFooter .row {
         width: 80%;
@@ -167,6 +191,15 @@
 	}
 	.pageHeaderImage a.callToActionButton{
 		float: left;
+		text-align: center;
+    		font-family: kanit;
+    		font-weight: 600;
+	}
+	
+	
+	/*Sections*/
+	h1{
+		font-size: 1.75em;
 	}
 	
 	/*Events*/
@@ -205,6 +238,7 @@
     /* Upcoming Events Footer */
     .upcomingEventsFooter .row {
         width: 100%;
+	margin-left: 3.2em;
     }
     .upcomingEventsFooter .tileItem, .upcomingEventsFooter .eventTile {
         width: 100%;
@@ -215,6 +249,13 @@
         padding-left: 0.15em;
         margin-bottom: 0.5em;
     }
+	.hasColorTag {
+    		margin-left: -1.5em;
+	}
+	section.hasSectionColorTag.red::before {
+    		height: 90vh;
+	}
+	
 	/*Mobile Footer*/
 	.footer li.nav-item {
     		font-size: 1.25em;
@@ -225,6 +266,7 @@
 	.col-md-6.bciNewsletter {
     		padding: 1em 2em 1em 0em;
 	}
+	
 
 
 }

@@ -394,6 +394,7 @@ section.pageHeaderImage {
     background-size: cover;
     min-height: 20vh;
     height: fit-content;
+	margin-bottom: 6em
 }
 section.pageHeaderImage.noText {
     min-height: 50vh;
@@ -443,6 +444,9 @@ section.breadcrumbs {
     padding-top: 4em;
     margin-left: -.9em;
 }
+section.breadcrumbs.bcCoursePath {
+    margin-left: .1em;
+}
 
 /* Color Tags */
 .hasColorTag::before {
@@ -465,6 +469,9 @@ section.breadcrumbs {
 }
 .hasColorTag.purple::before {
     background: $brand-purple;
+}
+h1.hasColorTag.red {
+    margin-left: -1em;
 }
 
 /* Section Color Tags */
@@ -529,7 +536,7 @@ section.upcomingEventsFooter {
 
 /* Tile Items */
 .tileItem {
-    width: 25%;
+    width: 23%;
     overflow: hidden;
     display: inline-block;
     margin-right: 2.5em;
