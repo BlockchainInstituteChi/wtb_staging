@@ -6,6 +6,10 @@ layout: faq
 author: Jeremy Cogan
 ---
 
+![test](assets/img/404.png)
+
+<img src="/assets/img/404.png">
+
 <span>A blockchain is a decentralized ledger that records all transactions. Each transaction that is conducted leaves a permanent record that can be referenced at any time. The structure of the blockchain allows these transactions to be self executing and immutable. Once validated, data is permanently recorded to the blockchain and cannot be altered in any way. </span>
 
 <span>The name blockchain largely refers to the structure of the technology. Blocks contain data that represents transactions, and when a block is created or “mined”, all the data contained in the block is added to the chain. Permanently. All ledgers are updated to include this new data. When all of the computers on the network have the same data in their copy of the ledger, this is called reaching consensus. Blocks are then linked together to form a chain and can be referenced at any time, hence the name blockchain.</span>
