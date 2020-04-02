@@ -39,7 +39,24 @@ defaults:
     values:
       layout: "default"
 
-plugins: ['jekyll-twitter-plugin']
+plugins: ['jekyll-responsive-image']
   
 include: ["node_modules"]
 exclude: []
+
+
+responsive_image:
+  template: _includes/responsive-image.html 
+  default_quality: 90
+  sizes:
+    - width: 480  
+      quality: 80 
+    - width: 800
+    - width: 1400
+      quality: 90
+  auto_rotate: false
+  strip: true
+  base_path: /assets/img/
+  output_path_format: assets/resized/%{width}/%{basename}
+  save_to_source: false
+  cache: false

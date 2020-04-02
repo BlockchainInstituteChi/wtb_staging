@@ -1,6 +1,9 @@
 <div class="row imageWithCaption">
     <div class="col-md-12">
-        <img src="/assets/img/{{ include.image }}">
+        {% responsive_image_block %}
+            path: 'assets/img/{{ include.image }}'
+            alt: '{{include.title}} thumbnail'
+        {% endresponsive_image_block %}
         <div class="caption">
             <h4>{{ include.title }}</h4>
             <span>{{ include.bodyText }}</span>

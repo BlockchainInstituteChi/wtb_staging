@@ -1,6 +1,9 @@
 <div class="row courseListing"> 
     <div class="col-sm-4">
-        <img src="/assets/img/{{include.image}}"/>
+        {% responsive_image_block %}
+            path: 'assets/img/{{ include.image }}'
+            alt: '{{include.title}} thumbnail'
+        {% endresponsive_image_block %}
     </div>
     <div class="col-sm-6">
         <h3>{{ include.title }}</h3>

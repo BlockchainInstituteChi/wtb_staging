@@ -5,7 +5,10 @@
 		{% for course in sorted limit: 3 %}
             <div class="tileItem"> 
                 <a target="_blank" href="{{ course.permalink }}">
-                    <img src="/assets/img/{{course.image}}"/>
+                    {% responsive_image_block %}
+                        path: 'assets/img/{{ course.image }}'
+                        alt: '{{course.title}} thumbnail'
+                    {% endresponsive_image_block %}
                     <h1>{{ course.title }}</h1>
                     <span>{{ course.author }}</span>
                 </a>

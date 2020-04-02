@@ -1,7 +1,10 @@
 
 <div class="eventTile"> 
     <a target="_blank" href="{{ include.link }}">
-        <img src="/assets/img/{{include.image}}"/>
+        {% responsive_image_block %}
+            path: 'assets/img/{{ include.image }}'
+            alt: '{{include.title}} thumbnail'
+        {% endresponsive_image_block %}
         <h1>{{ include.title }}</h1>
         <span>{{ include.date }}</span>
     </a>
