@@ -6,9 +6,9 @@ layout: faq
 author: Jeremy Cogan
 ---
 
-![test](assets/img/404.png)
+![](assets/img/404.png)
 
-<img src="/assets/img/404.png">
+<img src="assets/img/404.png">
 
 <span>A blockchain is a decentralized ledger that records all transactions. Each transaction that is conducted leaves a permanent record that can be referenced at any time. The structure of the blockchain allows these transactions to be self executing and immutable. Once validated, data is permanently recorded to the blockchain and cannot be altered in any way. </span>
 

@@ -231,7 +231,7 @@ In bitcoin, a wallet is a bit of an abstract. The bitcoin protocol doesn’t con
 </ul>
 <p>Here we will focus primarily on the second function and look at how wallets store private keys, interact with the blockchain and construct, sign and transmit transactions. Primarily we’ll focus on a wallets roll as a keychain for the private keys that control a users funds on the blockchain.</p>
 
-<p>&lt;img class=”aligncenter size-full wp-image-11577” <span> arbtext   </span> alt=”” width=”2816” height=”1329” /&gt;</p>
+<p><img class="aligncenter size-full wp-image-11577" src="https://theblockchaininstitute.org/wp-content/uploads/2019/02/WalletKeychain-01.png" alt="" width="2816" height="1329" /></p>
 
 <p>First, let’s take a step back and learn the relationship between public/private key pairs and bitcoin addresses.</p>
 
@@ -247,7 +247,7 @@ In bitcoin, a wallet is a bit of an abstract. The bitcoin protocol doesn’t con
 <div class="formula">1J7mdg5rbQyUHENYdx39WVWK7fsLpEoXZ</div>
 <p><br /></p>
 
-<p>&lt;img class=”aligncenter size-full wp-image-11578” <span> arbtext   </span> alt=”” width=”3899” height=”1680” /&gt;</p>
+<p><img class="aligncenter size-full wp-image-11578" src="https://theblockchaininstitute.org/wp-content/uploads/2019/02/PKtoBA-01.jpg" alt="" width="3899" height="1680" /></p>
 <div class="learnpressImageCaption"><b>A:</b> <i>Public Key;</i> <b>B:</b> <i>SHA256;</i> <b>C:</b> <i>RIPEMD160;</i> <b>D:</b> <i>"Double Hash" or HASH160;</i> <b>E:</b> <i>Public Key Hash (20 bytes/160 bits);</i> <b>F:</b> <i>Base58Check Encode with 0x00 version prefix;</i> <b>G:</b> <i>Bitcoin Address (Base58Check Encoded Public Key Hash).</i></div>
 <p><br /></p>
 
@@ -271,7 +271,7 @@ In bitcoin, a wallet is a bit of an abstract. The bitcoin protocol doesn’t con
 
 <p>When an address is typed into a wallet Base58Check code, the decoding software will calculate the checksum of the address on it’s own and compare it to the checksum included in the address. If the two do not match, the address entered is invalid.</p>
 
-<p>&lt;img class=”aligncenter size-full wp-image-11584” <span> arbtext   </span> alt=”” width=”9389” height=”5946” /&gt;</p>
+<p><img class="aligncenter size-full wp-image-11584" src="https://theblockchaininstitute.org/wp-content/uploads/2019/02/WalletsandAddresses-01-1.png" alt="" width="9389" height="5946" /></p>
 <div class="learnpressImageCaption"><b>BASE58CHECK ENCODING</b>
 <b>1:</b> <i>Add Version Prefix;</i> <b>2:</b> <i>Hash (Version Prefix + Payload);</i> <b>3:</b> <i>Add First 4 Bytes as Checksum;</i> <b>4:</b> <i>Encode in Base-58.</i>
 <b>A:</b> <i>Payload;</i> <b>B:</b> <i>Version;</i> <b>C:</b> <i>SHA256;</i> <b>D:</b> <i>First 4 Bytes;</i> <b>E:</b> <i>Checksum;</i> <b>F:</b> <i>Base58 Encode;</i> <b>G:</b> <i>Base58Check Encoded Payload.</i></div>
@@ -287,7 +287,7 @@ In bitcoin, a wallet is a bit of an abstract. The bitcoin protocol doesn’t con
 
 <p>The version prefix that is used depends on which network the address is intended for and whether it is a P2SH (Pay to Script Hash) or P2PKH (Pay to Public Key Hash) address.</p>
 
-<p>&lt;img class=”aligncenter size-full wp-image-11588” <span> arbtext   </span> alt=”” width=”10608” height=”4597” /&gt;</p>
+<p><img class="aligncenter size-full wp-image-11588" src="https://theblockchaininstitute.org/wp-content/uploads/2019/02/WalletsandAddresses-02.png" alt="" width="10608" height="4597" /></p>
 <div class="learnpressImageCaption"><b>A:</b> <i>Type;</i> <b>B:</b> <i>Version Prefix (Hex);</i> <b>C:</b> <i>Base58 Result Prefix;</i> <b>D:</b> <i>Bitcoin Address;</i> <b>E:</b> <i>Pay-To-Script-Hash Address;</i> <b>F:</b> <i>Bitcoin Testnet Address.</i></div>
 <p><br /></p>
 
