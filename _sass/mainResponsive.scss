@@ -321,6 +321,13 @@
 	    margin-left: 4em;
 	    text-align: left;
 	}
+	img.accountLight.greyswirl {
+		width: calc(100% - 3em);
+		vertical-align: sub;
+		margin-top: -0.5em;
+		margin-left: -0.65em;
+		max-width: 3em;
+	}
 	input.emailInput {
 	    float: right;
 	    display: block;

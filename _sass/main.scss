@@ -226,6 +226,7 @@ li.nav-item.contactUsLink {
 .account .col-sm-3, .account .col-sm-9 {
     padding: 0;
     margin: 0;
+    min-height: fit-content;
 }
 .account .row {
     margin: 0;
@@ -235,6 +236,7 @@ li.nav-item.contactUsLink {
     background: #e6e6e6;
     width: 30%;
     padding-bottom: .4em;
+    min-height: fit-content;
 }
 .account img {
     width: 2em;
@@ -286,6 +288,13 @@ img.accountLight {
     left: .55em;
     top: .5em;
 }
+img.accountLight.greyswirl {
+    width: calc(100% - 3em);
+    vertical-align: sub;
+    margin-top: -1em;
+    margin-left: -0.75em;
+}
+
 
 /* Search */
 li.nav-item.search {

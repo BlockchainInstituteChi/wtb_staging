@@ -37,3 +37,23 @@ function closeOtherLightboxBeforeOpening () {
     }
 
 }
+
+function openNavBoxDrawer () {
+
+    var navBox = document.getElementById('navBox')
+        navBox.className = navBox.className.split('d-none').join('')
+    var posBox = navBox.getBoundingClientRect()
+
+    do {
+
+        var pos = {
+        "x" : ( posBox.left + 1),
+        "y" : posBox.top,
+        }
+        console.log('pos is', pos)
+        navBox.style.left = pos.x + "px"
+        navBox.style.left = pos.y + "px"
+        console.log('navbox is')
+    } while (pos.x < ( window.width - (navBox.getBoundingClientRect()).width ))
+
+}
